@@ -4,14 +4,19 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #fefefe;
     color: #333;
 }
 
-header {
-    background-color: #fcfcfc;
-    color: rgb(0, 0, 0);
-    padding: 20px;
+.header {
+    display: flex;
+    align-items: center; /* Aligns the image and text vertically */
+}
+
+.logo {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 15px; /* Adds space between logo and text */
 }
 
 nav {
@@ -48,7 +53,7 @@ section {
 
 .button {
     display: inline-block;
-    background-color: #ff9800;
+    background-color: #007bff;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -71,7 +76,7 @@ footer {
 /* Newsletter Section */
 #newsletter {
     padding: 20px;
-    background: #ff9800;
+    background: #59b3f4;
     color: white;
     border-radius: 10px;
     margin: 20px auto;
@@ -90,7 +95,7 @@ footer {
 }
 
 #newsletter a:hover {
-    background-color: #e68900;
+    background-color: #0058e6;
     color: white;
 }
 
