@@ -69,6 +69,10 @@ nav ul li a {
     font-weight: bold;
 }
 
+a:hover {
+    color: #e68900;
+}
+
 section {
     padding: 20px;
     margin: 20px auto;
