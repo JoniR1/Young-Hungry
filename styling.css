@@ -92,6 +92,8 @@ section {
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.3s;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
 }
 
 .button:hover {
@@ -174,3 +176,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+
+#feedbackbox {
+    width: calc(100% - 150px)
+ } 
