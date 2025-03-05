@@ -6,7 +6,20 @@
     <title>Young & Hungry Podcast</title>
     <link rel="stylesheet" href="styling.css">
 </head>
-<body>
+
+<body onload="setTimeout(showPopup, 2000)"> 
+    <!-- Newsletter Popup -->
+    <div id="newsletter-popup" class="popup">
+        <div class="popup-content">
+            <a href="#" class="close" onclick="hidePopup()">&times;</a>
+            <h2>Stay Updated!</h2>
+            <p>Sign up for our newsletter to get the latest episodes and updates.</p>
+            <form action="#">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
     
     <!-- Header -->
     <header class="header">
@@ -24,6 +37,16 @@
             </ul>
         </nav>
     </header>
+
+    <script>
+        function showPopup() {
+            document.getElementById("newsletter-popup").classList.add("show");
+        }
+
+        function hidePopup() {
+            document.getElementById("newsletter-popup").classList.remove("show");
+        }
+    </script>
     
     
     <section id="white-section">
@@ -58,5 +81,7 @@
     <footer>
         <p>&copy; 2025 Young & Hungry Podcast. All rights reserved.</p>
     </footer>
+
+    
 </body>
 </html>
