@@ -220,3 +220,59 @@ footer {
 .close:hover {
     color: red;
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.split-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Side (Color Background) */
+.left {
+    width: 50%;
+    background-color: #5372c1; /* Adjust the color as needed */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.emoji {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Right Side (Image) */
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+}
+
+/* Circular Image Effect */
+.image-container {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #3f19e6; 
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
