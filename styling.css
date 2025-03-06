@@ -101,8 +101,9 @@ section {
     color: #fefefe
 }
 
-footer {
-    margin-top: 20px;
+.footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+    width: 100%;
     padding: 10px;
     background: #333;
     color: #fefefe;
@@ -235,14 +236,19 @@ body, html {
 /* Left Side (Color Background) */
 .left {
     width: 50%;
-    background-color: #377979; /* Adjust the color as needed */
+    background-color: #377979;
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    overflow-y: auto; /* Enables vertical scrolling */
     padding: 20px;
     text-align: center;
+
+    height: 100vh; 
+    max-height: 100vh;
+    justify-content: flex-start; /* Aligns content at the top */
+    box-sizing: border-box; /* Prevents extra padding from expanding the container */
 }
 
 .emoji {
