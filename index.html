@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Young & Hungry Podcast</title>
     <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body onload="setTimeout(showPopup, 2000)"> 
@@ -28,11 +29,12 @@
         <!-- Navigation -->
         <nav> 
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="podcast.html" class="active">Podcast</a></li>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html"></i> Home</a></li>
+                <li><a href="about.html"></i> About</a></li>
+                <li><a href="podcast.html"></i> Podcast</a></li>
+                <li><a href="explore.html"></i> Explore</a></li>
+                <li><a href="blog.html"><i class="fa fa-pencil"></i> Blog</a></li>
+
             </ul>
         </nav>
     </header>
@@ -50,7 +52,7 @@
 <div class="split-container">
     <div class="left">
         <section id="white-section">
-            <h2>Latest Episodes ▶️</h2>
+            <h2></i> Latest Episodes</h2>
             <ul>
                 <li><strong>Ep 1:</strong> </li>
                 <li><strong>Ep 2:</strong> </li>
@@ -59,16 +61,21 @@
         </section>
         
         <section id="teal-section">
-            <h2>Parent Newsletter ✉️</h2>
+            <h2><i class="fa fa-envelope"></i> Parent Newsletter</h2>
             <p>Parents, learn how to guide your kids in their passions! Subscribe to our newsletter.</p>
-            <a href="https://uci.co1.qualtrics.com/jfe/form/SV_3TMvAyg2SEOFsI6" target="_blank" class="button">Subscribe Now</a>
+            <a href="https://uci.co1.qualtrics.com/jfe/form/SV_3TMvAyg2SEOFsI6" target="_blank" class="button">Subscribe</a>
         </section>
         
     
         <section id="dark-section">
-            <h2>⭐ Connect With Us!</h2>
+            <h2>Connect With Us!</h2>
             <p>Stay updated with our latest content and community stories on Instagram!</p>
-            <a href="https://www.instagram.com/youngandhungryk_12/?igsh=NTc4MTIwNjQ2YQ%3D%3D#" target="_blank" class="button">Follow Us</a>
+            <a href="https://www.instagram.com/youngandhungryk_12/?igsh=NTc4MTIwNjQ2YQ%3D%3D#" 
+            target="_blank" 
+            class="button">
+            <i class="fa fa-instagram"></i> Follow Us
+            </a>
+
         </section>
         
         <section id="white-section">
@@ -79,16 +86,55 @@
         </section>
     </div>
     <div class="right">
-        <div class="image-container">
-            <a href="index.html"><img src="images/kids_reading.png" alt="kids_read" class="reading"></a>
+        <div class="carousel-container">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel">
+                <div class="slide active">
+                    <img src="images/slide1.png" alt="Did You Know 1">
+
+                </div>
+                <div class="slide">
+                    <img src="images/slide2.png" alt="Did You Know 2">
+
+                </div>
+                <div class="slide">
+                    <img src="images/slide3.png" alt="Did You Know 3">
+
+                </div>
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
     </div>
 </div>
 
-    
     <footer>
         <p>&copy; 2025 Young & Hungry Podcast. All rights reserved.</p>
     </footer>
     
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                if (i === index) {
+                    slide.classList.add("active");
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 12000);
+    </script>
 </body>
 </html>

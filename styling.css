@@ -105,12 +105,15 @@ section {
     color: #fefefe
 }
 
-.footer {
-    margin-top: auto; /* Pushes the footer to the bottom */
+footer {
+    background-color: #333 !important; /* Ensures it stays dark */
+    color: white;
+    text-align: center;
+    padding: 15px;
     width: 100%;
-    padding: 10px;
-    background: #333;
-    color: #fefefe;
+    position: relative; /* Ensures it's positioned correctly */
+    bottom: 0;
+    left: 0;
 }
 
 /* Episodes Section */
@@ -201,7 +204,7 @@ section {
     text-align: center;
     width: 500px;
     max-width: 80%;
-    display: none; /* Initially hidden */
+    display: none; 
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     z-index: 1000;
@@ -247,14 +250,14 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-y: auto; 
     padding: 20px;
     text-align: center;
 
     height: 100vh; 
     max-height: 100vh;
-    justify-content: flex-start; /* Aligns content at the top */
-    box-sizing: border-box; /* Prevents extra padding from expanding the container */
+    justify-content: flex-start; 
+    box-sizing: border-box;
 }
 
 .emoji {
@@ -291,11 +294,11 @@ body, html {
 
 .about-container {
     display: flex;
-    justify-content: center; /* Centers everything */
+    justify-content: center; 
     align-items: center;
     max-width: 90%;
     margin: 50px auto;
-    gap: 50px; /* Adjusts spacing between sections */
+    gap: 50px; 
 }
 
 
@@ -319,33 +322,116 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Adds spacing between heading and paragraph */
+    gap: 10px; 
     text-align: center;
 }
 
 .text-box h2 {
-    background: none; /* Removes white background from heading */
-    padding: 0; /* Removes any extra padding */
-    margin-bottom: 5px; /* Adds slight spacing */
+    background: none; 
+    padding: 0; 
+    margin-bottom: 5px; 
 }
 
 .text-box p {
-    background: white; /* White background only for paragraph */
+    background: white; 
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
     width: 100%;
-    max-width: 450px; /* Adjust width for alignment */
+    max-width: 450px; 
 }
 
 
 .footer-about {
-    background: #333;
+    background-color: #333 !important; /* Ensures the correct color */
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 50px; /* Adjusts space above footer */
     width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full page height */
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%; 
+    max-width: 600px; 
+    margin: auto;
+    overflow: hidden; /
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.caption {
+    background: white;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -30px; 
+    width: 90%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Fix buttons for navigation */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+button.prev {
+    left: 5px;
+}
+
+button.next {
+    right: 5px;
+}
+
+button.prev:hover, button.next:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 
