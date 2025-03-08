@@ -31,21 +31,21 @@ h3 {
 .header {
     background-color: #333;
     display: flex;
-    align-items: center; /* Aligns the image and text vertically */
+    align-items: center; 
 }
 
 .logo {
-    width: 80px; /* Adjust size as needed */
+    width: 80px; 
     height: auto;
     margin-left: 20px;
-    margin-right: 20px; /* Adds space between logo and text */
+    margin-right: 20px; 
 }
 
 .profile-img {
     width: 100%;
     max-width: 400px;
     height: auto;
-    border-radius: 10px; /* Adds rounded corners */
+    border-radius: 10px; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
 }
 
@@ -106,12 +106,12 @@ section {
 }
 
 footer {
-    background-color: #333 !important; /* Ensures it stays dark */
+    background-color: #333 !important; 
     color: white;
     text-align: center;
     padding: 15px;
     width: 100%;
-    position: relative; /* Ensures it's positioned correctly */
+    position: relative; 
     bottom: 0;
     left: 0;
 }
@@ -344,7 +344,7 @@ body, html {
 
 
 .footer-about {
-    background-color: #333 !important; /* Ensures the correct color */
+    background-color: #333 !important; 
     color: white;
     text-align: center;
     padding: 15px;
@@ -357,7 +357,7 @@ body, html {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures full page height */
+    min-height: 100vh; 
 }
 
 .carousel-container {
