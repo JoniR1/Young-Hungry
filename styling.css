@@ -41,10 +41,14 @@ h3 {
     margin-right: 20px; /* Adds space between logo and text */
 }
 
-.profile {
-    width: 30%;
+.profile-img {
+    width: 100%;
+    max-width: 400px;
     height: auto;
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
 }
+
 
 nav {
     padding: 10px 0;
@@ -178,6 +182,8 @@ section {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+
+
 #feedbackbox {
     width: calc(100% - 150px)
  } 
@@ -282,3 +288,64 @@ body, html {
     height: auto;
     object-fit: cover;
 }
+
+.about-container {
+    display: flex;
+    justify-content: center; /* Centers everything */
+    align-items: center;
+    max-width: 90%;
+    margin: 50px auto;
+    gap: 50px; /* Adjusts spacing between sections */
+}
+
+
+/* About Page - Left Section */
+.left-about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* About Page - Right Section */
+.right-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adds spacing between heading and paragraph */
+    text-align: center;
+}
+
+.text-box h2 {
+    background: none; /* Removes white background from heading */
+    padding: 0; /* Removes any extra padding */
+    margin-bottom: 5px; /* Adds slight spacing */
+}
+
+.text-box p {
+    background: white; /* White background only for paragraph */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%;
+    max-width: 450px; /* Adjust width for alignment */
+}
+
+
+.footer-about {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px; /* Adjusts space above footer */
+    width: 100%;
+}
+
