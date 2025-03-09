@@ -368,7 +368,7 @@ body {
     width: 100%; 
     max-width: 600px; 
     margin: auto;
-    overflow: hidden; /
+    overflow: hidden;
 }
 
 .carousel {
@@ -445,4 +445,22 @@ button.prev:hover, button.next:hover {
     margin: 20px;
     display: grid;
     grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.episodes-carousel {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
+}
+
+button.episodeprev, button.episodenext {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 10vh;
+    margin-top: 10vh;
 }
