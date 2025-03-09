@@ -464,3 +464,38 @@ button.episodeprev, button.episodenext {
     height: 10vh;
     margin-top: 10vh;
 }
+
+button.episodeprev:hover, button.episodenext:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.temp-image {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+}
+
+.blog-container {
+    background: #fefefe;
+    color: #333;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 10vw 60vw;
+    text-align: center;
+}
+
+.new-post {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fefefe;
+    font-size: 12px;
+    background: #333;
+    border-radius: 10px;
+    width: 6%;
+    height: 6%;
+    position: absolute;
+    z-index: 10;
+}
