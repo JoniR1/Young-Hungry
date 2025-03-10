@@ -201,45 +201,7 @@ footer {
     width: calc(100% - 150px)
  } 
 
-/* Newsletter Popup */
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgb(243, 224, 117);
-    padding: 150px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    text-align: center;
-    width: 500px;
-    max-width: 80%;
-    display: none; 
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    z-index: 1000;
-}
 
-/* Show the popup automatically */
-.popup.show {
-    display: block;
-    opacity: 1;
-}
-
-/* Close Button */
-.close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.close:hover {
-    color: red;
-}
 
 body, html {
     margin: 0;
@@ -445,3 +407,48 @@ button.prev:hover, button.next:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
+/* Apply blur effect only to main content when popup appears */
+.blur {
+    filter: blur(5px);
+    pointer-events: none; /* Prevent interactions while blurred */
+}
+
+/* Newsletter Popup */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(243, 224, 117);
+    padding: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    max-width: 80%;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+/* Show the popup */
+.popup.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: red;
+}

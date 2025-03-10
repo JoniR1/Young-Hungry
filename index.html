@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body onload="setTimeout(showPopup, 2000)"> 
-    <!-- Newsletter Popup -->
+<body onload="setTimeout(showPopup, 2000)">
+
+    <!-- Newsletter Popup (Stays Outside the Main Content) -->
     <div id="newsletter-popup" class="popup">
         <div class="popup-content">
             <a href="#" class="close" onclick="hidePopup()">&times;</a>
@@ -20,121 +21,94 @@
             </form>
         </div>
     </div>
-    
-    <!-- Header -->
-    <header class="header">
-        <a href="index.html"><img src="images/Adobe Express - file (28).png" alt="Young & Hungry Logo" class="logo"></a>
-        <h1>Young & Hungry </h1>
 
-        <!-- Navigation -->
-        <nav> 
-            <ul>
-                <li><a href="index.html"></i> Home</a></li>
-                <li><a href="about.html"></i> About</a></li>
-                <li><a href="podcast.html"></i> Podcast</a></li>
-                <li><a href="explore.html"></i> Explore</a></li>
-                <li><a href="blog.html"><i class="fa fa-pencil"></i> Blog</a></li>
+    <!-- Main Content (Blur Effect Applies Here) -->
+    <div id="main-content">
+        <!-- Header -->
+        <header class="header">
+            <a href="index.html"><img src="images/Adobe Express - file (28).png" alt="Young & Hungry Logo" class="logo"></a>
+            <h1>Young & Hungry </h1>
+            <nav> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="podcast.html">Podcast</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="blog.html"><i class="fa fa-pencil"></i> Blog</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            </ul>
-        </nav>
-    </header>
+        <!-- Main Sections -->
+        <div class="split-container">
+            <div class="left">
+                <section id="white-section">
+                    <h2>Latest Episodes</h2>
+                    <ul>
+                        <li><strong>Ep 1:</strong></li>
+                        <li><strong>Ep 2:</strong></li>
+                        <li><strong>Ep 3:</strong></li>
+                    </ul>
+                </section>
 
+                <section id="teal-section">
+                    <h2><i class="fa fa-envelope"></i> Parent Newsletter</h2>
+                    <p>Parents, learn how to guide your kids in their passions! Subscribe to our newsletter.</p>
+                    <a href="https://uci.co1.qualtrics.com/jfe/form/SV_3TMvAyg2SEOFsI6" target="_blank" class="button">Subscribe</a>
+                </section>
+
+                <section id="dark-section">
+                    <h2>Connect With Us!</h2>
+                    <p>Stay updated with our latest content and community stories on Instagram!</p>
+                    <a href="https://www.instagram.com/youngandhungryk_12/" target="_blank" class="button">
+                        <i class="fa fa-instagram"></i> Follow Us
+                    </a>
+                </section>
+
+                <section id="white-section">
+                    <h2>Have questions or feedback?</h2>
+                    <textarea rows="4" id="feedbackbox">Leave them here!</textarea>
+                    <br><br>
+                    <button class="button">Submit</button>
+                </section>
+            </div>
+
+            <div class="right">
+                <div class="carousel-container">
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <div class="carousel">
+                        <div class="slide active">
+                            <img src="images/slide1.png" alt="Did You Know 1">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide2.png" alt="Did You Know 2">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide3.png" alt="Did You Know 3">
+                        </div>
+                    </div>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Young & Hungry Podcast. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Popup & Blur Effect -->
     <script>
         function showPopup() {
             document.getElementById("newsletter-popup").classList.add("show");
+            document.getElementById("main-content").classList.add("blur");
         }
 
         function hidePopup() {
             document.getElementById("newsletter-popup").classList.remove("show");
+            document.getElementById("main-content").classList.remove("blur");
         }
     </script>
 
-<div class="split-container">
-    <div class="left">
-        <section id="white-section">
-            <h2></i> Latest Episodes</h2>
-            <ul>
-                <li><strong>Ep 1:</strong> </li>
-                <li><strong>Ep 2:</strong> </li>
-                <li><strong>Ep 3:</strong> </li>
-            </ul>
-        </section>
-        
-        <section id="teal-section">
-            <h2><i class="fa fa-envelope"></i> Parent Newsletter</h2>
-            <p>Parents, learn how to guide your kids in their passions! Subscribe to our newsletter.</p>
-            <a href="https://uci.co1.qualtrics.com/jfe/form/SV_3TMvAyg2SEOFsI6" target="_blank" class="button">Subscribe</a>
-        </section>
-        
-    
-        <section id="dark-section">
-            <h2>Connect With Us!</h2>
-            <p>Stay updated with our latest content and community stories on Instagram!</p>
-            <a href="https://www.instagram.com/youngandhungryk_12/?igsh=NTc4MTIwNjQ2YQ%3D%3D#" 
-            target="_blank" 
-            class="button">
-            <i class="fa fa-instagram"></i> Follow Us
-            </a>
-
-        </section>
-        
-        <section id="white-section">
-            <h2>Have questions or feedback?</h2>
-            <textarea rows="4" id="feedbackbox">Leave them here!</textarea>
-            <br><br>
-            <button class="button">Submit</button>
-        </section>
-    </div>
-    <div class="right">
-        <div class="carousel-container">
-            <button class="prev" onclick="prevSlide()">&#10094;</button>
-            <div class="carousel">
-                <div class="slide active">
-                    <img src="images/slide1.png" alt="Did You Know 1">
-
-                </div>
-                <div class="slide">
-                    <img src="images/slide2.png" alt="Did You Know 2">
-
-                </div>
-                <div class="slide">
-                    <img src="images/slide3.png" alt="Did You Know 3">
-
-                </div>
-            </div>
-            <button class="next" onclick="nextSlide()">&#10095;</button>
-        </div>
-    </div>
-</div>
-
-    <footer>
-        <p>&copy; 2025 Young & Hungry Podcast. All rights reserved.</p>
-    </footer>
-    
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll(".slide");
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.remove("active");
-                if (i === index) {
-                    slide.classList.add("active");
-                }
-            });
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        setInterval(nextSlide, 12000);
-    </script>
 </body>
 </html>
