@@ -116,25 +116,42 @@ footer {
     left: 0;
 }
 
-/* Episodes Section */
-#white-section {
-    padding: 20px;
-    background: #fefefe;
-    color: #333;
-    border-radius: 10px;
-    margin: 20px auto;
-    /* max-width: 800px; */
+.equal-height-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
-/* Newsletter Section */
-#teal-section {
+.equal-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
     padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px; /* Adjust to fit layout */
+    min-height: 220px; /* Ensures sections are equal height */
+}
+
+/* Specific section colors */
+#teal-section {
     background: #41b4a6;
     color: #fefefe;
-    border-radius: 10px;
-    margin: 20px auto;
-    /* max-width: 800px; */
 }
+
+#white-section {
+    background: #fefefe;
+    color: #333;
+}
+
+#dark-section {
+    background: #333;
+    color: #fefefe;
+}
+
 
 /* #newsletter a {
     display: inline-block;
@@ -154,14 +171,7 @@ footer {
 } */
 
 /* Social Media Section */
-#dark-section {
-    padding: 20px;
-    background: #333;
-    color: #fefefe;
-    border-radius: 10px;
-    margin: 20px auto;
-    /* max-width: 800px; */
-}
+
 
 /* #social-media a {
     display: inline-block;
