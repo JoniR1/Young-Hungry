@@ -15,7 +15,7 @@ h1 {
     font-family: 'Baloo';
     color: #fefefe;
     display: inline-block;
-    font-size: 30px;
+    font-size: 34px;
 }
 
 h2 {
@@ -96,7 +96,7 @@ section {
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.3s;
-    font-size: 16px;
+    font-size: 20px;
     font-family: Arial, sans-serif;
 }
 
@@ -106,7 +106,7 @@ section {
 }
 
 footer {
-    background-color: #333 !important; 
+    background-color: #3a3a3a !important; 
     color: white;
     text-align: center;
     padding: 15px;
