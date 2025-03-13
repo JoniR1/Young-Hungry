@@ -494,3 +494,68 @@ button.prev:hover, button.next:hover {
 .listen-button:hover {
     background-color: #005f5f;
 }
+
+.current-episode-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.current-episode-text-container {
+    margin: 20px;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.episodes-carousel {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
+}
+
+button.episodeprev, button.episodenext {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 10vh;
+    margin-top: 10vh;
+}
+
+button.episodeprev:hover, button.episodenext:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.temp-image {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+}
+
+.blog-container {
+    background: #fefefe;
+    color: #333;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 10vw 60vw;
+    text-align: center;
+}
+
+.new-post {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fefefe;
+    font-size: 12px;
+    background: #333;
+    border-radius: 10px;
+    width: 6%;
+    height: 6%;
+    position: absolute;
+    z-index: 10;
+}
