@@ -498,19 +498,69 @@ button.prev:hover, button.next:hover {
 .current-episode-container {
     margin: 20px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr 0.5fr;
 }
 
 .current-episode-text-container {
-    margin: 20px;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
     display: grid;
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 0.5fr 0.5fr;
+}
+
+.current-episode-title {
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    width: 100%;
+    margin: auto auto 20px auto;
+}
+
+.current-episode-body {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+.episode1-img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px auto auto 10px;
+}
+
+.latest-episode {
+    font-family: Arial, sans-serif;
+    margin: 10px auto auto 10px;
+    padding: 0;
+    text-align: center;
+    color: #fefefe;
+    font-size: 12px;
+    background: #333;
+    border-radius: 10px;
+    width: 8%;
+    height: 6%;
+    position: absolute;
+    z-index: 10;
 }
 
 .episodes-carousel {
-    margin: 5px;
+    margin: 0px;
+    /* padding: 10px; */
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
+}
+
+.episodes-img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    border-radius: 10px;
+    /* margin: auto; */
 }
 
 button.episodeprev, button.episodenext {
