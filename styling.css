@@ -189,10 +189,16 @@ footer {
     color: #fefefe;
 } */
 
-.container{
-    margin: 20px;
+.explore-container {
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.explore-boxes {
+    padding: 10px;
+    width: 90%;
+    margin: 20px;
 }
 
 
@@ -588,10 +594,11 @@ button.episodeprev:hover, button.episodenext:hover {
     background: #fefefe;
     color: #333;
     border-radius: 10px;
-    margin: 20px auto;
+    margin: auto 200px 50px 200px;
     display: grid;
-    grid-template-columns: 10vw 60vw;
+    grid-template-columns: 1fr 2fr;
     text-align: center;
+    padding-right: 50px;
 }
 
 .new-post {
@@ -607,4 +614,12 @@ button.episodeprev:hover, button.episodenext:hover {
     height: 6%;
     position: absolute;
     z-index: 10;
+}
+
+.blog-images{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin: auto auto auto 0px;
 }
