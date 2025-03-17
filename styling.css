@@ -550,17 +550,16 @@ button.prev:hover, button.next:hover {
 
 .episodes-carousel {
     margin: 0px;
-    /* padding: 10px; */
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
 }
 
 .episodes-img {
     width: 100%;
-    max-width: 160px;
+    max-width: 180px;
     height: auto;
     border-radius: 10px;
-    /* margin: auto; */
+    margin: auto;
 }
 
 button.episodeprev, button.episodenext {
@@ -572,7 +571,7 @@ button.episodeprev, button.episodenext {
     font-size: 18px;
     border-radius: 5px;
     height: 10vh;
-    margin-top: 10vh;
+    margin-top: 40%;
 }
 
 button.episodeprev:hover, button.episodenext:hover {
