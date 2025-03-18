@@ -196,12 +196,18 @@ footer {
 }
 
 .explore-boxes {
-    padding: 10px;
-    width: 90%;
-    margin: 20px;
+    padding: 0px 20px 0px 20px;
+    width: 80%;
+    margin: 10px auto;
 }
 
-
+.explore-img {
+    width: auto;
+    height: 100%;
+    max-height: 130px;
+    border-radius: 10px;
+    margin: auto;
+}
 
 #feedbackbox {
     width: calc(100% - 150px)
@@ -584,12 +590,6 @@ button.episodeprev:hover, button.episodenext:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
-.temp-image {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-radius: 10px;
-}
-
 .blog-container {
     background: #fefefe;
     color: #333;
@@ -621,5 +621,5 @@ button.episodeprev:hover, button.episodenext:hover {
     max-width: 250px;
     height: auto;
     border-radius: 10px;
-    margin: auto auto auto 0px;
+    margin: 0px auto auto 0px;
 }
